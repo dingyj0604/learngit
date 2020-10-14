@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text1-css网格系统</title>
+    <style>
+
+      .container {
+        height: 720px;
+        width: 100%;
+        color: white;
+      }
+      .container .row {
+        height: 100%;
+      }
+
+      .container>div>div:nth-child(1) {
+        height: 65%;
+        width: 65%;
+        float: left;
+        margin: 1% 1% 1% 1%;
+        background-color: rgb(148, 9, 9);
+      }
+      .container>div>div:nth-child(2) {
+        height: 32%;
+        width: 32%;
+        float: right;
+        margin: 1% 1% 1% 0%;
+        background-color: rgb(25, 165, 123);
+      }
+      .container>div>div:nth-child(3) {
+        height: 65%;
+        width: 32%;
+        float: right;
+        margin: 0% 1% 1% 0%;
+        background-color: rebeccapurple;
+    
+      }
+      .container>div>div:nth-child(4) {
+        height: 32%;
+        width: 32%;
+        float: left;
+        margin: 0% 1% 1% 1%;
+        background-color: rgb(25, 165, 123);
+      }
+      .container>div>div:nth-child(5) {
+        height: 32%;
+        width: 32%;
+        float: left;
+        margin: 0% 1% 1% 0%;
+        background-color: rgb(206, 66, 16);
+      }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div>1</div>
+          <div>2</div>
+          <div>4</div>
+          <div>3</div>
+          <div>5</div>
+        </div>
+      </div>
+</body>
+
+</html>
